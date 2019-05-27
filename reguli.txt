@@ -1,0 +1,389 @@
+scop = [moneda].
+
+regula = [1]
+daca sunt adevarate conditiile:
+  [pers_indep]
+  [familie]
+rezulta [centralizare] = [partiala] cu fact_cert = [80].
+
+regula = [2]
+daca sunt adevarate conditiile:
+  [pers_indep]
+  fals [familie]
+rezulta [centralizare] = [totala] cu fact_cert = [85].
+
+regula = [3]
+daca sunt adevarate conditiile:
+  [developer]
+  [familie]
+rezulta [suport_dev] = [mediu] cu fact_cert = [90].
+
+regula = [4]
+daca sunt adevarate conditiile:
+  [developer]
+  fals [familie]
+rezulta [suport_dev] = [mare] cu fact_cert = [95].
+
+regula = [5]
+daca sunt adevarate conditiile:
+  [suport_dev] = [mare]
+  [capital_total] = [mare]
+rezulta [siguranta_fonduri] = [mare] cu fact_cert = [92].
+
+regula = [6]
+daca sunt adevarate conditiile:
+  [suport_dev] = [mediu]
+  [capital_total] = [mare]
+rezulta [siguranta_fonduri] = [medie] cu fact_cert = [87].
+
+regula = [7]
+daca sunt adevarate conditiile:
+  [dorinte] = [evitare_inflatie]
+  [siguranta_fonduri] = [mare]
+rezulta [modalitate_investitie] = [lunga_durata] cu fact_cert = [90].
+
+regula = [8]
+daca sunt adevarate conditiile:
+  [dorinte] = [imbogatire]
+  [siguranta_fonduri] = [mica]
+rezulta [modalitate_investitie] = [scurta_durata] cu fact_cert = [80].
+
+regula = [9]
+daca sunt adevarate conditiile:
+  [dorinte] = [siguranta_avere]
+  [siguranta_fonduri] = [medie]
+rezulta [modalitate_investitie] = [lunga_durata] cu fact_cert = [70].
+
+regula = [10]
+daca sunt adevarate conditiile:
+  [avere] = [mare]
+  [istoric_investitie]
+rezulta [vechime_moneda] = [mare] cu fact_cert = [95].
+
+regula = [11]
+daca sunt adevarate conditiile:
+  [avere] = [medie]
+  [istoric_investitie]
+rezulta [vechime_moneda] = [mare] cu fact_cert = [85].
+
+regula = [12]
+daca sunt adevarate conditiile:
+  [avere] = [mica]
+  [istoric_investitie]
+rezulta [vechime_moneda] = [medie] cu fact_cert = [60].
+
+regula = [13]
+daca sunt adevarate conditiile:
+  [avere] = [mare]
+  fals [istoric_investitie]
+rezulta [vechime_moneda] = [mare] cu fact_cert = [90].
+
+regula = [14]
+daca sunt adevarate conditiile:
+  [avere] = [medie]
+  fals [istoric_investitie]
+rezulta [vechime_moneda] = [mica] cu fact_cert = [70].
+
+regula = [15]
+daca sunt adevarate conditiile:
+  [avere] = [mica]
+  fals [istoric_investitie]
+rezulta [vechime_moneda] = [mica]  cu fact_cert = [65].
+
+regula = [16]
+daca sunt adevarate conditiile:
+  [buget] = [mare]
+  [venit_lunar] = [mare]
+rezulta [pret_per_moneda] = [mare] cu fact_cert = [96].
+
+regula = [17]
+daca sunt adevarate conditiile:
+  [buget] = [mediu]
+  [venit_lunar] = [mare]
+rezulta [pret_per_moneda] = [mare] cu fact_cert = [91].
+
+regula = [18]
+daca sunt adevarate conditiile:
+  [buget] = [mediu]
+  [venit_lunar] = [mediu]
+rezulta [pret_per_moneda] = [mediu] cu fact_cert = [85].
+
+regula = [19]
+daca sunt adevarate conditiile:
+  [buget] = [mic]
+  [venit_lunar] = [mare]
+rezulta [pret_per_moneda] = [mic] cu fact_cert = [80].
+
+regula = [20]
+daca sunt adevarate conditiile:
+  [buget] = [mare]
+  [venit_lunar] = [mediu]
+rezulta [pret_per_moneda] = [mediu] cu fact_cert = [76].
+
+regula = [21]
+daca sunt adevarate conditiile:
+  [buget] = [mediu]
+  [venit_lunar] = [mediu]
+rezulta [pret_per_moneda] = [mediu] cu fact_cert = [86].
+
+regula = [22]
+daca sunt adevarate conditiile:
+  [buget] = [mic]
+  [venit_lunar] = [mediu]
+rezulta [pret_per_moneda] = [mic] cu fact_cert = [71].
+
+regula = [23]
+daca sunt adevarate conditiile:
+  [buget] = [mic]
+  [venit_lunar] = [mic]
+rezulta [pret_per_moneda] = [mic] cu fact_cert = [93].
+
+regula = [24]
+daca sunt adevarate conditiile:
+  fals [developer]
+  fals [familie]
+rezulta [suport_dev] = [mic] cu fact_cert = [92].
+
+regula = [25]
+daca sunt adevarate conditiile:
+  [suport_dev] = [mediu]
+  [capital_total] = [mediu]
+rezulta [siguranta_fonduri] = [medie] cu fact_cert = [84].
+
+regula = [26]
+daca sunt adevarate conditiile:
+  [suport_dev] = [mic]
+  [capital_total] = [mediu]
+rezulta [siguranta_fonduri] = [mica] cu fact_cert = [81].
+
+regula = [27]
+daca sunt adevarate conditiile:
+  [suport_dev] = [mic]
+  [capital_total] = [mic]
+rezulta [siguranta_fonduri] = [mica] cu fact_cert = [92].
+
+regula = [28]
+daca sunt adevarate conditiile:
+  [anonim] = [putin]
+  [vechime_moneda] = [mare]
+  [pret_per_moneda] = [mare]
+  fals [sporturi_extreme]
+rezulta [moneda] = [bitcoin] cu fact_cert = [97].
+
+regula = [29]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [vechime_moneda] = [mare]
+  fals [sporturi_extreme]
+rezulta [moneda] = [bitcoin] cu fact_cert = [94].
+
+regula = [30]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [pret_per_moneda] = [mare]
+rezulta [moneda] = [bitcoin] cu fact_cert = [76].
+
+regula = [31]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+  [vechime_moneda] = [mica]
+rezulta [moneda] = [dash] cu fact_cert = [82].
+
+regula = [32]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+rezulta [moneda] = [dash] cu fact_cert = [92].
+
+regula = [33]
+daca sunt adevarate conditiile:
+  [eco_friendly]
+  [vechime_moneda] = [mica]
+rezulta [moneda] = [ripple] cu fact_cert = [97].
+
+regula = [34]
+daca sunt adevarate conditiile:
+  [eco_friendly]
+rezulta [moneda] = [ripple] cu fact_cert = [88].
+
+regula = [35]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+  [centralizare] = [totala]
+  [vechime_moneda] = [mica]
+rezulta [moneda] = [monero] cu fact_cert = [93].
+
+regula = [36]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+  [centralizare] = [totala]
+  [vechime_moneda] = [medie]
+rezulta [moneda] = [monero] cu fact_cert = [83].
+
+regula = [37]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+  [centralizare] = [totala]
+  [pret_per_moneda] = [mic]
+rezulta [moneda] = [zcash] cu fact_cert = [93].
+
+regula = [38]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [centralizare] = [totala]
+  [pret_per_moneda] = [mediu]
+rezulta [moneda] = [zcash] cu fact_cert = [88].
+
+regula = [39]
+daca sunt adevarate conditiile:
+  [sporturi_extreme]
+  fals [familie]
+  [eco_friendly]
+rezulta [moneda] = [omisego] cu fact_cert = [91].
+
+regula = [40]
+daca sunt adevarate conditiile:
+  [sporturi_extreme]
+  [familie]
+  [eco_friendly]
+rezulta [moneda] = [omisego] cu fact_cert = [92].
+
+regula = [41]
+daca sunt adevarate conditiile:
+  [sporturi_extreme]
+  fals [familie]
+  fals [eco_friendly]
+rezulta [moneda] = [omisego] cu fact_cert = [94].
+
+regula = [42]
+daca sunt adevarate conditiile:
+  [anonim] = [mare]
+  [dorinte] = [imbogatire]
+  [eco_friendly]
+  [modalitate_investitie] = [scurta_durata]
+rezulta [moneda] = [neo] cu fact_cert = [91].
+
+regula = [43]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [dorinte] = [siguranta_avere]
+  [eco_friendly]
+  [modalitate_investitie] = [lunga_durata]
+rezulta [moneda] = [neo] cu fact_cert = [84].
+
+regula = [44]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [dorinte] = [evitare_inflatie]
+  fals [eco_friendly]
+  [modalitate_investitie] = [lunga_durata]
+rezulta [moneda] = [neo] cu fact_cert = [56].
+
+regula = [45]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [dorinte] = [imbogatire]
+  fals [eco_friendly]
+  [modalitate_investitie] = [scurta_durata]
+rezulta [moneda] = [neo] cu fact_cert = [78].
+
+regula = [46]
+daca sunt adevarate conditiile:
+  fals [eco_friendly]
+  [developer]
+  [centralizare] = [totala]
+rezulta [moneda] = [ethereum] cu fact_cert = [92].
+
+regula = [47]
+daca sunt adevarate conditiile:
+  [eco_friendly]
+  [developer]
+  [centralizare] = [totala]
+rezulta [moneda] = [ethereum] cu fact_cert = [82].
+
+regula = [48]
+daca sunt adevarate conditiile:
+  [eco_friendly]
+  fals [developer]
+  [centralizare] = [totala]
+rezulta [moneda] = [ethereum] cu fact_cert = [78].
+
+regula = [49]
+daca sunt adevarate conditiile:
+  fals [eco_friendly]
+  [developer]
+  [centralizare] = [partiala]
+rezulta [moneda] = [ethereum] cu fact_cert = [68].
+
+regula = [50]
+daca sunt adevarate conditiile:
+  [anonim] = [mediu]
+  [dorinte] = [siguranta_avere]
+  [eco_friendly]
+  [modalitate_investitie] = [scurta_durata]
+rezulta [moneda] = [neo] cu fact_cert = [81].
+
+intrebare[
+text_intrebare=['Care este bugetul tau? Mic: 0-1.000; Mediu: 1.000-10.000; Mare: 10.000-50.000']
+atribut=[buget]
+optiuni= [Mic, Mediu, Mare]
+].
+
+intrebare[
+text_intrebare=['Te intereseaza ca sistemul sa fie eco-friendly?']
+atribut=[eco_friendly]
+optiuni= [Da, Nu]
+].
+
+intrebare[
+text_intrebare=['Cat de mare te intereseaza gradul de confidentialitate? Putin, Mediu, Mare']
+atribut=[anonim]
+optiuni=[Putin, Mediu, Mare]
+].
+
+intrebare[
+text_intrebare = ['Ai familie?']
+atribut = [familie]
+optiuni = [Da, Nu]
+].
+
+intrebare[
+text_intrebare=['Care este venitul tau lunar? Mic: 0-500, Mediu: 500-15.000, Mare: peste 15.000 euro']
+atribut=[venit_lunar]
+optiuni= [Mic, Mediu, Mare]
+].
+
+intrebare[
+text_intrebare=['Care este averea ta? Mica: 0-45.000 euro; Medie: 45.000-150.000; Mare: 150.000+ euro']
+atribut=[avere]
+optiuni=[Mica, Medie, Mare]
+].
+
+intrebare[
+text_intrebare=['Practicati sporturi extreme cum ar fi sky diving?']
+atribut=[sporturi_extreme]
+optiuni =[Da, Nu]
+].
+
+intrebare[
+text_intrebare = ['Ce asteptari sau dorinte ai de la aceasta investitie? Imbogatire, Evitare_inflatie, Siguranta_fonduri']
+atribut = [dorinte]
+optiuni = [imbogatire, evitare_inflatie, siguranta_fonduri]
+].
+
+intrebare[
+text_intrebare = ['Ai mai investit vreodata?']
+atribut = [istoric_investitie]
+optiuni = [Da, Nu]
+].
+
+intrebare[
+text_intrebare = ['Esti developer?']
+atribut = [developer]
+optiuni = [Da, Nu]
+].
+
+intrebare[
+text_intrebare = ['Esti o persoana independenta?']
+atribut = ['pers_indep']
+optiuni = [Da, Nu]
+].
