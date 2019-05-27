@@ -1,10 +1,3 @@
-/*
-cod preluat din cartea(bibliografie[1]):
-BALCAN Maria Florina, HRISTEA Florentina,
-Aspecte ale Cautarii si Reprezentarii Cunostintelor in Inteligenta Artificiala,
-Editura Universitatii din Bucuresti, 2004,
-pg 216
-*/
 
 close_all:-current_stream(_,_,S),close(S),fail;true.
 
